@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Platforms>AnyCPU</Platforms>
+    <LangVersion>preview</LangVersion>
+    <Version>0.0.2-alpha</Version>
+    <Authors>zmjack</Authors>
+    <Company>nstandard.net</Company>
+    <PackageProjectUrl>https://github.com/zmjack/AsmSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/zmjack/AsmSharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>asm native cpu</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AsmSharp</PackageId>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NStandard" Version="0.8.9" />
+  </ItemGroup>
+
+</Project>
